@@ -26,33 +26,11 @@ for (let letter of arre) {
 
 //..................3.............................
 //Дан массив имен ваших знакомых, добавить к каждому элементу массива слова hello
-var ss = [ 'Lili', 'Bill', 'Feyra'];
-var h =[' Hello']
 
-console.log( ss[0] +h);
-console.log( ss[1] +h);
-console.log( ss[2] +h);
-
-while (ss < 3) {
-    ss++;
-    h += ss;
+var friends= ["Bill","Lili","Sam"];
+for (var ip=0; ip<friends.length; ip++) {
+    console.log(friends[ip])
 }
-
-//..................4.............................
-//Преобразовать числовой массив в Boolean
-const array = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-
-function isPrime(num) {
-    for (let i = 2; num > i; i++) {
-        if (num % i == 0) {
-            return false;
-        }
-    }
-    return num > 1;
-}
-
-console.log(array.filter(isPrime));
-
 
 
 //..................5.............................
@@ -64,11 +42,12 @@ let numbers = [1,6,7,8,3,4,5,6];
 
 
 //..................6.............................
-let i = [1,6,7,8,3,4,5,6]
-while (i < 3) {
-    console.log( i );
+const nums= [1,6,7,8,3,4,5,6]
+const filtered = nums.filter(function(value){
+    return value >3;
+});
+console.log(filtered)
 
-}
 
 //..................7.............................
 let lengths = ["Leila", "Anna", "Madi"].map(item => item.length);
@@ -80,14 +59,9 @@ console.log(lengths);
 
 
 //..................8.............................
-let a = 15;
-while (a !== 10) { // когда i будет равно 0, условие станет ложным, и цикл остановится
-    alert( a );
-    i--;
+for (var il=20; il>10; il--) {
+console.log(il)
 }
-
-
-
 
 //..................9.............................
 let n = 10;
@@ -104,8 +78,9 @@ nextPrime:
 
 
 //..................10............................
-let num = 0;
-while(num<10){
-    num++;
-    if(num%2) console.log(num);
-}
+const nmbrs=[1,2,3,4,5];
+const filtereD=nmbrs.filter(function(value){
+    return value%2 == 0;
+
+});
+console.log(filtered)
