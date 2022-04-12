@@ -80,7 +80,7 @@ nextPrime:
 //..................10............................
 const nmbrs=[1,2,3,4,5];
 const filtereD=nmbrs.filter(function(value){
-    return value%2 == 0;
+    return value%2 === 0;
 
 });
 console.log(filtered)
