@@ -1,8 +1,11 @@
 
 
 // 1) Дан массив состоящий из названий фильмов, выполните перебор массива с выводом в консоль названия каждого фильма
-let movie = ["Don't look up", "Kill Bill", "The Social Networking"];
-alert( movie ); // Don't look up, Kill Bill, The Social Networking
+var arr= ["Don't look up", "Kill Bill", "The Social Networking"];
+var eArr = arr.values();
+for (let letter of eArr) {
+    console.log(letter);
+}
 
 
 
@@ -10,12 +13,12 @@ alert( movie ); // Don't look up, Kill Bill, The Social Networking
 
 //..................2...........................
 //Дан массив производителей автомобилей, преобразовать массив в строку и обратно в массив
-let cars = ["BMW", "Mercedez-benz", "Audi"];
+var cars = ["BMW", "Mercedez-benz", "Audi"];
+var arre = cars.values();
+for (let letter of arre) {
+    console.log(letter);
+}
 
-alert( cars[0] ); // BMW
-alert( cars[1] ); // Mercedez-benz
-alert( cars[2] ); // Audi
-alert(cars);
 
 
 
@@ -23,30 +26,32 @@ alert(cars);
 
 //..................3.............................
 //Дан массив имен ваших знакомых, добавить к каждому элементу массива слова hello
-let friends = [ 'Lili', 'Bill', 'Feyra'];
+var ss = [ 'Lili', 'Bill', 'Feyra'];
+var h =[' Hello']
 
-alert( friends[0] +' hello');
-alert( friends[1] +' hello');
-alert( friends[2] +' hello');
+console.log( ss[0] +h);
+console.log( ss[1] +h);
+console.log( ss[2] +h);
 
-
-
+while (ss < 3) {
+    ss++;
+    h += ss;
+}
 
 //..................4.............................
 //Преобразовать числовой массив в Boolean
-let sum = 10;
+const array = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
-while (true) {
-
-    let value = +prompt("Введите число", '');
-
-    if (!value) break;
-
-    sum += value;
-
+function isPrime(num) {
+    for (let i = 2; num > i; i++) {
+        if (num % i == 0) {
+            return false;
+        }
+    }
+    return num > 1;
 }
-alert( 'Сумма: ' + sum );
 
+console.log(array.filter(isPrime));
 
 
 
@@ -61,13 +66,13 @@ let numbers = [1,6,7,8,3,4,5,6];
 //..................6.............................
 let i = [1,6,7,8,3,4,5,6]
 while (i < 3) {
-    alert( i );
+    console.log( i );
 
 }
 
 //..................7.............................
 let lengths = ["Leila", "Anna", "Madi"].map(item => item.length);
-alert(lengths);
+console.log(lengths);
 
 
 
@@ -76,12 +81,15 @@ alert(lengths);
 
 //..................8.............................
 let a = 15;
-while (a !== 10) { // когда i будет равно 0, условие станет ложным, и цикл остановится
+for (a !== 10) { // когда i будет равно 0, условие станет ложным, и цикл остановится
     alert( a );
     i--;
 }
 
-
+for (let value of iterable) {
+    value += 1;
+    console.log(value);
+  }
 
 
 //..................9.............................
