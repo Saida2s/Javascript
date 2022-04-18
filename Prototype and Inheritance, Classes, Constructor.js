@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Создать 2 объекта: animal и cat, в объект animal добавить свойство move, объект cat должен наследовать свойство move, реализовать и через прототипы и через классы.
 
 class Animal {
@@ -27,3 +28,15 @@ let cat = new Cat("White cat");
 cat.run(5);
 cat.hide();
 cat.sitting();
+=======
+const animal= new Object({
+    name: name
+})
+
+Object.prototype.features=function(){
+    console.log('move')
+}
+
+let cat;
+cat = Object.create(animal);
+>>>>>>> main
