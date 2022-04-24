@@ -89,12 +89,11 @@ console.log(filtered)
 
 
 
+
 // 1) Дан массив состоящий из названий фильмов, выполните перебор массива с выводом в консоль названия каждого фильма
-var arr= ["Don't look up", "Kill Bill", "The Social Networking"];
-var eArr = arr.values();
-for (let letter of eArr) {
-    console.log(letter);
-}
+let arr= ["Don't look up", "Kill Bill", "The Social Networking"];
+console.log(arr)
+
 
 
 
@@ -102,11 +101,9 @@ for (let letter of eArr) {
 
 //..................2...........................
 //Дан массив производителей автомобилей, преобразовать массив в строку и обратно в массив
-var cars = ["BMW", "Mercedez-benz", "Audi"];
-var arre = cars.values();
-for (let letter of arre) {
-    console.log(letter);
-}
+let cars = ["BMW", "Mercedez-benz", "Audi"];
+console.log(cars);
+
 
 
 
@@ -116,9 +113,9 @@ for (let letter of arre) {
 //..................3.............................
 //Дан массив имен ваших знакомых, добавить к каждому элементу массива слова hello
 
-var friends= ["Bill","Lili","Sam"];
-for (var ip=0; ip<friends.length; ip++) {
-    console.log(friends[ip])
+let friends= ["Bill","Lili","Sam"];
+for (let ip=0; ip<friends.length; ip++) {
+    console.log(" Hello! "+friends[ip])
 }
 
 
@@ -162,7 +159,7 @@ nextPrime:
             if (i % j === 0) continue nextPrime; // не подходит, берём следующее
         }
 
-        alert( i ); // простое число
+        console.log( i ); // простое число
     }
 
 
@@ -170,6 +167,5 @@ nextPrime:
 const nmbrs=[1,2,3,4,5];
 const filtereD=nmbrs.filter(function(value){
     return value%2 === 0;
-
 });
-console.log(filtered)
+console.log(filtereD)
