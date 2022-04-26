@@ -1,19 +1,20 @@
-
-
 try {
-    let a = 3;
-    console.log(a);
-
-
-} catch(e) {
-    alert('let перед использованием нужно объявить')
-
+    let a = '3';
+    console.log("%s treated as string", a);
 }
 
+catch (e){
+    
+ Errors('let перед использованием нужно объявить');
+}
+
+
+
 try{
-    let b=1/0
-    console.log(b)
+    let b=1/0;
+    console.log(Error,b);
 
 }catch (e) {
-    alert('на ноль делить нельзя');
+
+throw ( new Error('на ноль делить нельзя'));
 }
