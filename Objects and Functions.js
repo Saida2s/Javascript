@@ -8,8 +8,6 @@ const person = new Object({
 
 console.log(person);
 
-
-
 //...............................................
 
 function sum(apple, pineapple) {
@@ -39,17 +37,6 @@ console.log(x)
 
 //......................................
 
-function tNum(num){
-    for (var i = 2; i < num; i++) {
-        if (num%i==0){
-            return false;
-        }
-    };
-    return true;
-}
-tNum[1,2,3,4,5,6,7,8,9]
-console.log(num(i))
-//////////////////////////////////////////////
 
 function isPrime(num){
   for (var i = 2; i < num; i++) {
@@ -59,4 +46,4 @@ function isPrime(num){
   }
   return true;
 }
-console.log(isPrime);
+;
