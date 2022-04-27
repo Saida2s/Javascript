@@ -1,13 +1,13 @@
 
 
-let item = "Car";
-alert(item);
+const person = new Object({
+    name: "Car",
+    color: "Black",
+    power: "190",
+});
 
-let color = 'green';
-alert(color["green"]);
+console.log(person);
 
-let power = 190
-alert(power); //190
 
 
 //...............................................
@@ -15,51 +15,48 @@ alert(power); //190
 function sum(apple, pineapple) {
     return apple + pineapple;
   }
-  
-  let result1 = sum(5, 10);
-  alert( result1 ); // 15
 
+  let result1 = sum(5, 10);
+  console.log( result1 ); // 15
 
 //...............................................
-let name: string = prompt('Введите ваше имя'), Saida;
+let users = prompt('Введите ваше имя'), Saida;
 
-if ( checkName () ) {
-    alert( 'Доступ получен' );
+function checkName(){
+if ( user () ) {
+    alert( 'Hi!'+users );
 } else {
     alert( 'Доступ закрыт' );
 }
+}
 
 
+//......................................
 
+var square = function(number) { return number * number; };
+var x = square(5); 
+console.log(x)
 
+//......................................
 
+function tNum(num){
+    for (var i = 2; i < num; i++) {
+        if (num%i==0){
+            return false;
+        }
+    };
+    return true;
+}
+tNum[1,2,3,4,5,6,7,8,9]
+console.log(num(i))
+//////////////////////////////////////////////
 
-
-let item = "Car";
-alert(item);
-
-let color = 'green';
-alert(color["green"]);
-
-let power = 190
-alert(power); //190
-
-
-//...............................................
-
-function sum(apple, pineapple) {
-    return apple + pineapple;
+function isPrime(num){
+  for (var i = 2; i < num; i++) {
+      if (num%i==0)return false;
+          return num >=2;
+      
   }
-  
-  let result1 = sum(5, 10);
-  alert( result1 ); // 15
-
-
-//...............................................
-let name: string = prompt('Введите ваше имя'), Saida;
-
-if ( checkName () ) {
-    alert( 'Доступ получен' );
-} else {
-    alert( 'Доступ закрыт' );
+  return true;
 }
+console.log(isPrime);
